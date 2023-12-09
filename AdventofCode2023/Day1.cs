@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdventofCode2023
+namespace Day1
 {
     public class Day1
     {
