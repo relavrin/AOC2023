@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A6A06F26-9C79-44CB-BCF9-3C3C47D8C733}</ProjectGuid>
+    <ProjectGuid>{62E1BEFE-01C0-4022-AE7B-3B25A2FA2665}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AdventofCode2023</RootNamespace>
-    <AssemblyName>AdventofCode2023</AssemblyName>
+    <RootNamespace>Day1_2</RootNamespace>
+    <AssemblyName>Day1_2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Day1\Day1.cs" />
-    <Compile Include="Day2\Day2.cs" />
+    <Compile Include="Day1_2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
