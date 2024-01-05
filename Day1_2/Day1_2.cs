@@ -37,19 +37,7 @@ namespace Day1_2
                 {
                 firstNum = "";
                 secondNum = "";
-                  /*  for (int i = 0; i < s.Length; i++)
-                    {
-                        char ch = s[i];
-
-                        if (i == 0 && char.IsDigit(ch))
-                        {
-                            firstNum = ch.ToString();
-                        }
-                        else if (i == s.Length - 1 && char.IsDigit(ch))
-                        {
-                            secondNum = ch.ToString();
-                        }
-                    }*/
+                 
 
                     for (int i = 0; i < s.Length; i++)
                     {
