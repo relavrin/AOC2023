@@ -5,8 +5,6 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1", "AdventofCode2023\Day1.csproj", "{A6A06F26-9C79-44CB-BCF9-3C3C47D8C733}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{D3A7CE93-C2D7-45CF-A97F-7CED2F32DC1A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1_2", "Day1_2\Day1_2.csproj", "{62E1BEFE-01C0-4022-AE7B-3B25A2FA2665}"
 EndProject
 Global
