@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Day2
 {
-    public class Program
+    public class Day2
     {
         static void Main(string[] args)
         {
