@@ -38,6 +38,7 @@ namespace Day2
                         
                     }
 
+                    
                     if(ch.Equals(':'))
                     {
                         break;
@@ -45,9 +46,25 @@ namespace Day2
                 }
                 int convGameNum = Convert.ToInt32(gameNum);
                 Console.WriteLine(convGameNum);
-              
-            
 
+                string number = "";
+                int num = 0;
+                
+                for (int i = 0; i < s.Length; i++)
+                {
+                    char ch = s[i];
+
+                    if(char.IsDigit(ch))
+                    {
+                       number += ch.ToString(); 
+                    }
+                    if(ch.Equals(','))
+                    {
+                        break;
+                    }
+                }
+
+             
 
                 
 
