@@ -12,6 +12,8 @@ namespace Day2
         static void Main(string[] args)
         {
             List<string> lines = new List<string>();
+            List<int> validID = new List<int>();
+
             string gameNum = "";
 
             while(true)
@@ -45,31 +47,114 @@ namespace Day2
                     }
                 }
                 int convGameNum = Convert.ToInt32(gameNum);
-                Console.WriteLine(convGameNum);
+                gameNum = "";
 
                 string number = "";
                 int num = 0;
+                string color = "";
                 
                 for (int i = 0; i < s.Length; i++)
                 {
                     char ch = s[i];
 
-                    if(char.IsDigit(ch))
+                    if (ch.Equals(':'))
                     {
-                       number += ch.ToString(); 
+                        for (int j = i; j < s.Length; j++)
+                        {
+                            char c = s[j];
+                            if (char.IsDigit(c))
+                            {
+                                number += c.ToString();
+                            }
+
+                            if (char.IsLetter(c))
+                            {
+                                num = Convert.ToInt32(number);
+                                color += c.ToString();
+
+                            }
+
+                            if (color == "blue")
+                            {
+                                if (num > 14)
+                                {
+                                    
+                                    convGameNum = 0;
+                                    num = 0;
+                                    color = "";
+                                    number = "";
+                                }
+                                else
+                                {
+                                    num = 0;
+                                    color = "";
+                                    number = "";
+                                }
+                            }
+                            else if (color == "red")
+                            {
+                                if (num > 12)
+                                {
+                                    
+                                    convGameNum = 0;
+                                    num = 0;
+                                    color = "";
+                                    number = "";
+                                }
+                                else
+                                {
+                                    num = 0;
+                                    color = "";
+                                    number = "";
+                                }
+                            }
+                            else if (color == "green")
+                            {
+                                if (num > 13)
+                                {
+                                    
+                                    convGameNum = 0;
+                                    num = 0;
+                                    color = "";
+                                    number = "";
+                                }
+                                else
+                                {
+                                    num = 0;
+                                    color = "";
+                                    number = "";
+                                }
+                            }
+                        }
                     }
-                    if(ch.Equals(','))
+                    
+                    if(convGameNum == 0)
                     {
                         break;
                     }
+                    
                 }
 
-             
+                if(convGameNum == 0)
+                {
 
-                
+                }
+                else
+                {
+                    validID.Add(convGameNum);
+                    Console.WriteLine(convGameNum);
+
+                }
+
 
             }
+            int sum = 0;
 
+            foreach(int i in validID)
+            {
+                sum += i;
+            }
+            Console.WriteLine("Total sum is: " + sum);
             Console.ReadLine();
         }
     }
